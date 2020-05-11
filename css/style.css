@@ -91,7 +91,7 @@ h3::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 700px;
+  width: 815px;
 }
 
 .header .left {
@@ -800,6 +800,7 @@ footer hr {
 }
 
 .about {
+  height: auto;
   margin: 35px 0 0 0;
 }
 
@@ -807,13 +808,20 @@ footer hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#FFF), color-stop(49%, #FFF), color-stop(49%, #F7F4EF), to(#F7F4EF));
+  background: linear-gradient(to right, #FFF 0%, #FFF 49%, #F7F4EF 49%, #F7F4EF 100%);
+  width: 100%;
 }
 
-.left {
-  width: 50%;
+.about__wrapper .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .about__block-title {
+  margin: 0 0 35px 65px;
   font-size: 36px;
   font-family: 'Arsenal', sans-serif;
   font-weight: normal;
@@ -841,6 +849,7 @@ footer hr {
 }
 
 .about__block-text {
+  padding: 0 0 65px 65px;
   width: 85%;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -848,14 +857,20 @@ footer hr {
   font-size: 16px;
   line-height: 26px;
   color: #555B60;
+  width: 70%;
 }
 
 .about__block-img {
   width: 50%;
 }
 
+.left {
+  width: 50%;
+  margin: 0 0 10px 0;
+}
+
 .left__img {
-  background: url(../img/about/pic2.png) no-repeat center;
+  background: url(../img/about/pic2.png) no-repeat left;
   height: 321px;
   width: auto;
 }

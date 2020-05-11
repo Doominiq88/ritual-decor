@@ -91,7 +91,7 @@ h3::after {
     display: flex;
     font-size: 13px;
     justify-content: space-between;
-    width: 700px;
+    width: 815px;
 }
 
 .header .left {
@@ -714,18 +714,22 @@ footer hr {
 
 //about
 .about {
+    height: auto;
     margin: 35px 0 0 0;
 }
 
 .about__wrapper {
     display: flex;
-}
-
-.left {
-    width: 50%;
+    height: auto;
+    background: linear-gradient(to right, #FFF 0%, #FFF 49%, #F7F4EF 49%, #F7F4EF 100%);
+    width: 100%;
+    .container {
+        display: flex;
+    }
 }
 
 .about__block-title {
+    margin: 0 0 35px 65px;
     font-size: 36px;
     font-family: 'Arsenal', sans-serif;
     font-weight: normal;
@@ -753,15 +757,22 @@ footer hr {
 }
 
 .about__block-text {
+    padding: 0 0 65px 65px;
     @include fontStyle;
+    width: 70%;
 }
 
 .about__block-img {
     width: 50%;
 }
 
+.left {
+    width: 50%;
+    margin: 0 0 10px 0;
+}
+
 .left__img {
-    background: url(../img/about/pic2.png) no-repeat center;
+    background: url(../img/about/pic2.png) no-repeat left;
     height: 321px;
     width: auto;
 }
