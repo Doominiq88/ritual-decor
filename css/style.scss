@@ -13,6 +13,14 @@
     color: #555B60;
 }
 
+@mixin sub-title {
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #555B60;
+}
+
 .container {
     width: 80%;
     max-width: 1180px;
@@ -784,4 +792,70 @@ footer hr {
 .right__img {
     background: url(../img/about/pic1.png) no-repeat center;
     height: 793px;
+}
+
+//conditions
+.condidions__wrapper {
+    display: flex;
+    height: auto;
+}
+
+.conditions__delivery,
+.conditions__point {
+    width: 50%;
+}
+
+.delivery__img {
+    margin: 50px 0 25px 0;
+    background: url(../img/conditions/delivery.png) center no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+.delivery__phone a,
+.point__adress__phone a {
+    padding-right: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2E7AAE;
+}
+
+.delivery__sub-title,
+.point__sub-title {
+    margin: 0 0 15px 0;
+    @include sub-title
+}
+
+.delivery__text {
+    margin: 0 0 15px;
+    @include fontStyle()
+}
+
+.point__img {
+    margin: 50px 0 25px 0;
+    background: url(../img/conditions/box.png) center no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+.point__adress__item {
+    display: flex;
+}
+
+.point__adress__img {
+    background: url(../img/conditions/Group.png) center no-repeat;
+    height: 16px;
+    width: 12px;
+}
+
+.point__adress__name {
+    margin: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    color: #555B60;
 }
