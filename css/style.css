@@ -865,8 +865,7 @@ footer hr {
 }
 
 .left {
-  width: 50%;
-  margin: 0 0 10px 0;
+  width: 35%;
 }
 
 .left__img {
@@ -998,5 +997,9 @@ footer hr {
   width: 100%;
   font-size: 14px;
   margin-bottom: 20px;
+}
+
+.project__img img {
+  padding: 4px;
 }
 /*# sourceMappingURL=style.css.map */
